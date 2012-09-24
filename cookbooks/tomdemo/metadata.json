@@ -1,0 +1,30 @@
+{
+  "description": "Installs/Configures tomdemo",
+  "groupings": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "version": "0.0.1",
+  "recommendations": {
+  },
+  "recipes": {
+    "tomdemo::helloworld": "Prints hello world"
+  },
+  "attributes": {
+  },
+  "providing": {
+  },
+  "license": "All rights reserved",
+  "suggestions": {
+  },
+  "replacing": {
+  },
+  "platforms": {
+  },
+  "conflicting": {
+  },
+  "maintainer_email": "thomas@rightscale.comL",
+  "name": "tomdemo",
+  "dependencies": {
+  },
+  "maintainer": "Tom Stern"
+}
