@@ -1,30 +1,44 @@
 {
-  "description": "Installs/Configures tomdemo",
-  "groupings": {
-  },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "version": "0.0.1",
-  "recommendations": {
-  },
   "recipes": {
     "tomdemo::helloworld": "Prints hello world"
   },
+  "groupings": {
+  },
+  "maintainer": "Tom Stern",
+  "name": "tomdemo",
+  "version": "0.0.1",
+  "maintainer_email": "thomas@rightscale.com",
   "attributes": {
+    "tomdemo/apache_package_name": {
+      "calculated": false,
+      "recipes": [
+        "tomdemo::helloworld"
+      ],
+      "type": "string",
+      "default": "apache2",
+      "display_name": "Apache Package Name",
+      "required": "optional",
+      "choice": [
+
+      ],
+      "description": "An override for the apache package name"
+    }
+  },
+  "dependencies": {
   },
   "providing": {
   },
   "license": "All rights reserved",
-  "suggestions": {
-  },
-  "replacing": {
+  "recommendations": {
   },
   "platforms": {
   },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "replacing": {
+  },
+  "suggestions": {
+  },
   "conflicting": {
   },
-  "maintainer_email": "thomas@rightscale.comL",
-  "name": "tomdemo",
-  "dependencies": {
-  },
-  "maintainer": "Tom Stern"
+  "description": "Installs/Configures tomdemo"
 }
