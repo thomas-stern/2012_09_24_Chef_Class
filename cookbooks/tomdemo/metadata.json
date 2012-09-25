@@ -1,45 +1,59 @@
 {
-  "groupings": {
+  "maintainer": "Tom Stern",
+  "recipes": {
+    "tomdemo::helloworld": "Prints hello world",
+    "tomdemo::change_index": "Changes the /var/www.index.html content",
+    "tomdemo::foo_install": "Moves foo.text to /temp/foo.txt"
   },
-  "dependencies": {
-  },
-  "license": "All rights reserved",
-  "version": "0.0.1",
-  "suggestions": {
-  },
-  "maintainer_email": "thomas@rightscale.com",
-  "recommendations": {
-  },
-  "description": "Installs/Configures tomdemo",
   "attributes": {
     "tomdemo/apache_package_name": {
-      "type": "string",
-      "description": "An override for the apache package name",
-      "required": "optional",
-      "display_name": "Apache Package Name",
-      "default": "apache2",
-      "recipes": [
-        "tomdemo::helloworld"
-      ],
       "calculated": false,
       "choice": [
 
-      ]
+      ],
+      "recipes": [
+        "tomdemo::helloworld"
+      ],
+      "display_name": "Apache Package Name",
+      "default": "apache2",
+      "description": "An override for the apache package name",
+      "type": "string",
+      "required": "optional"
+    },
+    "tomdemo/my_name": {
+      "calculated": false,
+      "choice": [
+
+      ],
+      "recipes": [
+        "tomdemo::change_index"
+      ],
+      "display_name": "My Name",
+      "description": "My name for the index.html.file",
+      "type": "string",
+      "required": "optional"
     }
   },
-  "conflicting": {
-  },
-  "maintainer": "Tom Stern",
-  "replacing": {
-  },
+  "version": "0.0.1",
   "providing": {
   },
-  "platforms": {
+  "recommendations": {
   },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "replacing": {
+  },
+  "dependencies": {
+  },
+  "suggestions": {
+  },
+  "license": "All rights reserved",
+  "conflicting": {
+  },
+  "groupings": {
+  },
+  "maintainer_email": "thomas@rightscale.com",
+  "description": "Installs/Configures tomdemo",
   "name": "tomdemo",
-  "recipes": {
-    "tomdemo::helloworld": "Prints hello world",
-    "tomdemo::foo_install": "Moves foo.text to /temp/foo.txt"
-  },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n"
+  "platforms": {
+  }
 }
