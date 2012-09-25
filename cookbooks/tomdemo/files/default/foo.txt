@@ -1,1 +1,3 @@
 Something in here to show it came from the cookbook
+This is a second line to update foo.txt.
+Should force a backup of foo.txt on the server when it passes the file over.
