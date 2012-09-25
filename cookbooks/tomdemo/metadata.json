@@ -1,44 +1,45 @@
 {
-  "recipes": {
-    "tomdemo::helloworld": "Prints hello world"
-  },
   "groupings": {
-  },
-  "maintainer": "Tom Stern",
-  "name": "tomdemo",
-  "version": "0.0.1",
-  "maintainer_email": "thomas@rightscale.com",
-  "attributes": {
-    "tomdemo/apache_package_name": {
-      "calculated": false,
-      "recipes": [
-        "tomdemo::helloworld"
-      ],
-      "type": "string",
-      "default": "apache2",
-      "display_name": "Apache Package Name",
-      "required": "optional",
-      "choice": [
-
-      ],
-      "description": "An override for the apache package name"
-    }
   },
   "dependencies": {
   },
-  "providing": {
-  },
   "license": "All rights reserved",
+  "version": "0.0.1",
+  "suggestions": {
+  },
+  "maintainer_email": "thomas@rightscale.com",
   "recommendations": {
   },
-  "platforms": {
-  },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "replacing": {
-  },
-  "suggestions": {
+  "description": "Installs/Configures tomdemo",
+  "attributes": {
+    "tomdemo/apache_package_name": {
+      "type": "string",
+      "description": "An override for the apache package name",
+      "required": "optional",
+      "display_name": "Apache Package Name",
+      "default": "apache2",
+      "recipes": [
+        "tomdemo::helloworld"
+      ],
+      "calculated": false,
+      "choice": [
+
+      ]
+    }
   },
   "conflicting": {
   },
-  "description": "Installs/Configures tomdemo"
+  "maintainer": "Tom Stern",
+  "replacing": {
+  },
+  "providing": {
+  },
+  "platforms": {
+  },
+  "name": "tomdemo",
+  "recipes": {
+    "tomdemo::helloworld": "Prints hello world",
+    "tomdemo::foo_install": "Moves foo.text to /temp/foo.txt"
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n"
 }

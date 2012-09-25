@@ -6,6 +6,7 @@ long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "0.0.1"
 
 recipe "tomdemo::helloworld", "Prints hello world"
+recipe "tomdemo::foo_install", "Moves foo.text to /temp/foo.txt"
 
 attribute "tomdemo/apache_package_name",
   :display_name => "Apache Package Name",
